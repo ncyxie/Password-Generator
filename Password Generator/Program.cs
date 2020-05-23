@@ -80,9 +80,9 @@ public class RandomNumberGenerator
         }
 
         StringBuilder builder = new StringBuilder();
-        builder.Append(RandomString(number1 - 5, true));
+        builder.Append(RandomString(number1 - 6, true));
         builder.Append(RandomNumber(100, 999));
-        builder.Append(RandomString(2, false));
+        builder.Append(RandomString(3, false));
         Console.WriteLine($"Your generated random password is: " + builder.ToString());
 
         Thread.Sleep(1500);
