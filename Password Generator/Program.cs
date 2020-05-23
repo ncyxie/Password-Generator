@@ -7,10 +7,10 @@ class RandomNumberSample
     static void Main(string[] args)
     {
 
-        Thread.Sleep(1000);
+        Thread.Sleep(500);
         Console.WriteLine($"Random Password Generator");
         Console.WriteLine($"-------------------------");
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
 
 
         // Generate a random number  
@@ -58,11 +58,11 @@ public class RandomNumberGenerator
         int number1 = 0;
         Console.Write("Enter password length > ");
         number1 = Int32.Parse(Console.ReadLine());
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
         Console.WriteLine($"Generating random password..");
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
         Console.WriteLine($"Please wait..");
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
 
         while (number1 < 6)
         {
@@ -74,9 +74,9 @@ public class RandomNumberGenerator
             Console.Write("Enter password length > ");
             number1 = Int32.Parse(Console.ReadLine());
             Console.WriteLine($"Generating random password..");
-            Thread.Sleep(1500);
+            Thread.Sleep(1300);
             Console.WriteLine($"Please wait..");
-            Thread.Sleep(1500);
+            Thread.Sleep(1300);
         }
 
         StringBuilder builder = new StringBuilder();
@@ -85,18 +85,18 @@ public class RandomNumberGenerator
         builder.Append(RandomString(3, false));
         Console.WriteLine($"Your generated random password is: " + builder.ToString());
 
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
         Console.WriteLine("           ");
         Console.WriteLine("Do you want to generate another password?");
         Console.WriteLine("\ty - Yes");
         Console.WriteLine("\tn - No");
 
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
 
         Console.WriteLine("           ");
         Console.Write("Your option? > ");
 
-        Thread.Sleep(1500);
+        Thread.Sleep(1300);
 
         switch (Console.ReadLine())
         {
